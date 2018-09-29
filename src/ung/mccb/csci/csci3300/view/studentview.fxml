@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="316.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ung.mccb.csci.csci3300.controller.Controller">
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the UNG Parking Portal" />
+   <Pane prefHeight="200.0" prefWidth="310.0" />
+   <Text lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+
+    <TextField fx:id="txtFirstname" promptText="Enter First Name" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtLastname" promptText="Enter Last Name" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Card Info:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCardinfo" promptText="Enter Card Info" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Car Make:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCarmake" promptText="Enter Car Make" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Car Model:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCarmodel" promptText="Enter Car Model" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Car Year:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCaryear" promptText="Enter Car Year" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Car Color:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCarcolor" promptText="Enter Car Color" />
+   <AmbientLight color="#004180" lightOn="true" />
+   <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Car Tag:" />
+     </items>
+   </SplitPane>
+    <TextField fx:id="txtCartag" promptText="Enter Car Tag">
+      <contextMenu>
+         <ContextMenu>
+           <items>
+             <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+           </items>
+         </ContextMenu>
+      </contextMenu></TextField>
+   <AmbientLight color="#004180" lightOn="true" />
+    <Button onAction="#submitRecord" text="Submit" />
+
+
+
+
+
+
+</VBox>
